@@ -1,0 +1,96 @@
+% TODO list
+% ----------
+% -
+
+% Style rules
+% -----------
+% - Don't be typing ``pdflatex'' or some bullshit; use the Makefile.
+% - 80 character hard wrapping.
+% - Line break between sentences to make the git diffs readable.
+% - Use \, as a multiply operator.
+% - Use \sectionname not Section, \figname not Figure, \documentname not
+%   Article or Paper or paper.
+
+\documentclass[modern, letterpaper]{aastex61}
+
+\include{gitstuff}
+\include{preamble}
+
+% packages
+\usepackage{microtype}  % ALWAYS!
+\usepackage{amsmath}
+\definecolor{cbblue}{HTML}{3182bd}
+\hypersetup{backref,breaklinks,colorlinks,urlcolor=cbblue,
+            linkcolor=cbblue,citecolor=black}
+
+% define macros for text
+\newcommand{\project}[1]{\textsl{#1}}
+\newcommand{\acronym}[1]{{\small{#1}}}
+\newcommand{\apogee}{\project{\acronym{APOGEE}}}
+\newcommand{\sdssiii}{\project{\acronym{SDSS-III}}}
+
+\newcommand{\documentname}{\textsl{Article}}
+\newcommand{\sectionname}{Section}
+\newcommand{\figname}{Figure}
+\newcommand{\eqname}{Equation}
+
+% % response to referee
+% \definecolor{mahogany}{RGB}{165,15,21}
+% \newcommand{\resp}[1]{{\color{mahogany}#1}}
+
+% TODO
+\newcommand{\todo}[1]{{\color{red}TODO: #1}}
+
+\begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing % trust me
+
+\title{TITLE HERE}
+
+\author{Adrian~M.~Price-Whelan}
+\affiliation{Department of Astrophysical Sciences,
+             Princeton University, Princeton, NJ 08544, USA}
+\altaffiliation{To whom correspondence should be addressed:
+                \texttt{adrn@astro.princeton.edu}}
+
+\author{David~W.~Hogg}
+\affiliation{Center for Cosmology and Particle Physics,
+             Department of Physics,
+             New York University, 4 Washington Place,
+             New York, NY 10003, USA}
+\altaffiliation{Center for Data Science,
+                New York University, 60 Fifth Avenue,
+                New York, NY 10011, USA}
+\altaffiliation{Max-Planck-Institut f\"ur Astronomie,
+                K\"onigstuhl 17, D-69117 Heidelberg, Germany}
+\altaffiliation{Simons Center for Data Analysis,
+                Simons Foundation, 160 Fifth Avenue,
+                New York, NY 10010, USA}
+
+\begin{abstract}
+Suh.
+% Context
+% Aims
+% Methods
+% Results
+\end{abstract}
+
+\keywords{
+}
+
+\section{Introduction} \label{sec:intro}
+
+\software{The code used in this project is available from
+\url{https://github.com/adrn/haiklu} under the MIT open-source software
+license. This version was generated at git commit
+\texttt{\githash\,(\gitdate)}.
+This research additionally utilized:
+    \texttt{Astropy} (\citealt{Astropy-Collaboration:2013}),
+    \texttt{IPython} (\citealt{Perez:2007}),
+    \texttt{matplotlib} (\citealt{Hunter:2007}),
+    and \texttt{numpy} (\citealt{Van-der-Walt:2011}).}
+
+% \facility{\sdssiii, \apogee}
+
+\bibliographystyle{aasjournal}
+% \bibliography{thejoker}
+
+\end{document}
