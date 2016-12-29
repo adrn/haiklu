@@ -18,50 +18,33 @@
 
 % packages
 \usepackage{microtype}  % ALWAYS!
-\usepackage{amsmath}
-\definecolor{cbblue}{HTML}{3182bd}
-\hypersetup{backref,breaklinks,colorlinks,urlcolor=cbblue,
-            linkcolor=cbblue,citecolor=black}
 
-% define macros for text
-\newcommand{\project}[1]{\textsl{#1}}
-\newcommand{\acronym}[1]{{\small{#1}}}
-\newcommand{\apogee}{\project{\acronym{APOGEE}}}
-\newcommand{\sdssiii}{\project{\acronym{SDSS-III}}}
-
-\newcommand{\documentname}{\textsl{Article}}
-\newcommand{\sectionname}{Section}
-\newcommand{\figname}{Figure}
-\newcommand{\eqname}{Equation}
-
-% % response to referee
-% \definecolor{mahogany}{RGB}{165,15,21}
-% \newcommand{\resp}[1]{{\color{mahogany}#1}}
-
-% TODO
-\newcommand{\todo}[1]{{\color{red}TODO: #1}}
+% Macros for text - most are defined in preamble.tex
+% \newcommand{\apogee}{\project{\acronym{APOGEE}}}
+% \newcommand{\sdssiii}{\project{\acronym{SDSS-III}}}
 
 \begin{document}\sloppy\sloppypar\raggedbottom\frenchspacing % trust me
 
 \title{TITLE HERE}
 
 \author{Adrian~M.~Price-Whelan}
-\affiliation{Department of Astrophysical Sciences,
-             Princeton University, Princeton, NJ 08544, USA}
 \altaffiliation{To whom correspondence should be addressed:
                 \texttt{adrn@astro.princeton.edu}}
+\affiliation{Department of Astrophysical Sciences,
+             Princeton University, Princeton, NJ 08544, USA}
+
 
 \author{David~W.~Hogg}
 \affiliation{Center for Cosmology and Particle Physics,
              Department of Physics,
              New York University, 4 Washington Place,
              New York, NY 10003, USA}
-\altaffiliation{Center for Data Science,
+\affiliation{Center for Data Science,
                 New York University, 60 Fifth Avenue,
                 New York, NY 10011, USA}
-\altaffiliation{Max-Planck-Institut f\"ur Astronomie,
+\affiliation{Max-Planck-Institut f\"ur Astronomie,
                 K\"onigstuhl 17, D-69117 Heidelberg, Germany}
-\altaffiliation{Simons Center for Data Analysis,
+\affiliation{Simons Center for Data Analysis,
                 Simons Foundation, 160 Fifth Avenue,
                 New York, NY 10010, USA}
 

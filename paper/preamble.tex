@@ -9,9 +9,9 @@
 \usepackage{color}
 
 \usepackage{hyperref}
-\definecolor{linkcolor}{rgb}{0,0,0.2}
-\hypersetup{colorlinks=true,linkcolor=linkcolor,citecolor=linkcolor,
-            filecolor=linkcolor,urlcolor=linkcolor}
+\definecolor{cbblue}{HTML}{3182bd}
+\hypersetup{colorlinks=true,linkcolor=cbblue,citecolor=cbblue,
+            filecolor=cbblue,urlcolor=cbblue}
 \hypersetup{pageanchor=false}
 
 \newcommand{\documentname}{\textsl{Article}}
@@ -24,15 +24,12 @@
 \newcommand{\package}[1]{\textsl{#1}}
 \newcommand{\acronym}[1]{{\small{#1}}}
 \newcommand{\project}[1]{\package{#1}}
-\newcommand{\rewinder}{\project{Rewinder}}
-\newcommand{\streakline}{\project{Streakline}}
-\newcommand{\superfreq}{\project{SuperFreq}}
-
 \newcommand{\github}{\project{GitHub}}
 \newcommand{\python}{\project{Python}}
 
 % For referee
-\newcommand{\changes}[1]{{\color{red} #1}}
+\definecolor{mahogany}{RGB}{165,15,21}
+\newcommand{\resp}[1]{{\color{mahogany}#1}}
 
 % Stats / probability
 \newcommand{\given}{\,|\,}
